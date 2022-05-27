@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM nginx:alphine
 LABEL maintainer="bootlabs"
 
 VOLUME /myvol
