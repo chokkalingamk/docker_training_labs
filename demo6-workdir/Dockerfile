@@ -2,12 +2,14 @@ FROM alpine:3.16
 
 LABEL maintainer="bootlabs"
 
-WORKDIR /opt
-RUN echo "Welcome to Training Labs" > opt.txt
-WORKDIR folder1
-RUN echo "Welcome to Training Labs" > folder1.txt
-WORKDIR folder2
-RUN echo "Welcome to Training Labs" > folder2.txt
+# WORKDIR /opt
+
+####################################
+# RUN echo "Welcome to Training Labs" > opt.txt
+# WORKDIR folder1
+# RUN echo "Welcome to Training Labs" > folder1.txt
+# WORKDIR folder2
+# RUN echo "Welcome to Training Labs" > folder2.txt
 
 ###########Absolute Path############
 
@@ -18,5 +20,5 @@ RUN echo "Welcome to Training Labs" > folder2.txt
 ##########Environment Variables path ########
 
 
-# ENV DIRPATH /myfolder
-# WORKDIR $DIRPATH
+ENV DIRPATH /myfolder
+WORKDIR $DIRPATH

@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.16
 RUN apk update
-ADD http://www.vlsitechnology.org/pharosc_8.4.tar.gz .
+ADD https://ftp.nluug.nl/pub/vim/unix/vim-8.2.tar.bz2 .
 
